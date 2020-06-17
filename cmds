@@ -1,0 +1,5 @@
+kubectl create -f nginx.pod.yml [ --save-config --dry-run --validate=true ]
+
+kubectl get pod kbs-nginx -o=yaml
+
+kubectl describe pod kbs-nginx
