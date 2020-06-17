@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   labels:
     test: liveness
-  name: liveness-test
+  name: liveness-cmd
 spec:
   containers:
-  - name: liveness
+  - name: liveness-cmd
     image: nginx:alpine
     args:
     - /bin/sh
