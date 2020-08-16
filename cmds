@@ -1,5 +1,12 @@
 kubectl create -f nginx.pod.yml [ --save-config --dry-run --validate=true ]
 
-kubectl get pod kbs-nginx -o=yaml
+kubectl get pod kbs-nginx [ -o=yaml ]
 
 kubectl describe pod kbs-nginx
+
+kubectl get deployments --show-labels
+
+kubectl get deployments -l [ label-name=label-value ]
+
+kubectl scale deployment [ deployment-name ] --replicas=5
+kubectl scale -f file.deployment.yml --replicas=5
